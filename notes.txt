@@ -1,0 +1,31 @@
+Steps (based on https://www.youtube.com/watch?v=e8TP2FERKls)
+- create db Users
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `userId` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(30) NOT NULL,
+  `userEmail` varchar(60) NOT NULL,
+  `userPass` varchar(255) NOT NULL,
+  PRIMARY KEY (`userId`),
+  UNIQUE KEY `userEmail` (`userEmail`)
+); 
+
+- create file dbconnect.php to connect to db
+<?php
+  $conn = mysqli_connect("localhost", "root", "password", "dbname");
+?>
+
+- in register.php
+<?php
+  include 'dbconnect.php';
+  // and create variables 
+  $first = $POST['firstName'] // get values from the form
+  $last = $POST['lastName'] 
+  $uid = $POST['uid'] 
+  $pass = $POST['password'] 
+?>
+
+
+
+
+Video stopped at 16:04 
