@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include 'dbconnect.php';
 
 $name = $_POST['uname'];

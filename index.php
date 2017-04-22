@@ -1,3 +1,7 @@
+<?php
+  session_start(); // acessseing the variable which are put inside $_SESSION['id']
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +16,14 @@
 <body>
 <h2> Home Page</h2>
 
+<?php
+  if(isset($_SESSION['id'])){ // if logged in, show user id
+    echo $_SESSION['id'];
+  }else{
+    echo "You are not logged in";
+  }
+?>
+
 <form action="login.php" method="POST">
   <input type="email" name="email" placeholder="email" required>
   <input type="password" name="password" placeholder="password" required>
@@ -25,6 +37,11 @@
   <input type="email" name="email" placeholder="email" required>
   <input type="password" name="password" placeholder="password" required>
   <button>Sign up</button>
+</form>
+
+<br><br>
+<form action="logout.php">
+  <button>Log out</button>
 </form>
 </body>
 </html>

@@ -1,6 +1,5 @@
 Steps (based on https://www.youtube.com/watch?v=e8TP2FERKls)
 - create db Users
-
 CREATE TABLE IF NOT EXISTS `users` (
   `userId` int(11) NOT NULL AUTO_INCREMENT,
   `userName` varchar(30) NOT NULL,
