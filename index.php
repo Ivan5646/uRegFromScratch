@@ -11,10 +11,31 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style></style>
 </head>
 <body>
-<h2> Home Page</h2>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <?php
+        if( !isset($_SESSION['id']) ){
+         echo "<li><a href='#'><span class='glyphicon glyphicon-log-in'></span>Login</a></li>";
+        }else {
+         echo "<li><a href='#'><span class='glyphicon glyphicon-log-out'></span>Logout</a></li>";
+        }
+      ?>
+    </ul>
+  </div>
+</nav>
 
 <?php
   if(isset($_SESSION['id'])){ // if logged in, show user id
@@ -24,7 +45,7 @@
   }
 ?>
 
-<form action="login.php" method="POST">
+<form action="php_login/login.php" method="POST">
   <input type="email" name="email" placeholder="email" required>
   <input type="password" name="password" placeholder="password" required>
   <button>Login</button>
@@ -32,7 +53,7 @@
 
 <br><br>
 
-<form action="register.php" method="POST">
+<form action="php_login/register.php" method="POST">
   <input type="text" name="uname" placeholder="user name" required>
   <input type="email" name="email" placeholder="email" required>
   <input type="password" name="password" placeholder="password" required>
@@ -40,9 +61,11 @@
 </form>
 
 <br><br>
-<form action="logout.php">
+<form action="php_login/logout.php">
   <button>Log out</button>
 </form>
+
+<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
 

@@ -18,6 +18,6 @@ if(!$row = $result->fetch_assoc()){ // if no result from db
   $_SESSION['id'] = $row['userId']; // create id var in SESSION and assign to userId to it from the db
 }
 
-header("Location: index.php") // redirects to index.php
+header("Location: ../index.php") // redirects to index.php
 
 ?>
