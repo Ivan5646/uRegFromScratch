@@ -29,9 +29,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 Video stopped at 16:04 
 Scope
-- organise php scripts into a separate folder, create header for all the pages
+- create header for all the pages
 - double password check
 - check if user already exists on sign up
+- close buttons and functions for forms
+
+Done
+- organise php scripts into a separate folder
+- password enncryption
 
 
 https://www.youtube.com/watch?v=-oDlU4-7aDQ  button too. How to Make Login Logout in PHP with Bootstrap 08:00

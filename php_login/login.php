@@ -7,7 +7,9 @@ include 'dbconnect.php';
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
-$sql = "SELECT * FROM users WHERE userEmail='$email' AND userPAss='$pass' ";
+$encrypted_pass =  hash('sha256', $pass); 
+
+$sql = "SELECT * FROM users WHERE userEmail='$email' AND userPAss='$encrypted_pass' ";
 $result = $conn->query($sql);
 
 
