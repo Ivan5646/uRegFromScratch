@@ -30,5 +30,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 Video stopped at 16:04 
 Scope
 - organise php scripts into a separate folder, create header for all the pages
-- double password
+- double password check
 - check if user already exists on sign up
+
+
+https://www.youtube.com/watch?v=-oDlU4-7aDQ  button too. How to Make Login Logout in PHP with Bootstrap 08:00
+! <li class='logoutLi'><a href='php_login/logout.php'><span class='glyphicon glyphicon-log-out'></span>Logout</a></li>
+https://www.sitepoint.com/community/t/how-to-call-php-page-with-jquery-ajax/30596/2
