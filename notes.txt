@@ -29,13 +29,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 Video stopped at 16:04 
 Scope
-- check if user already exists on sign in
-- set minimum on pass characters
-- double password check
+- password should be decrypted?
+- double password check ?
 - close buttons and functions for forms
 - create header for all the pages
 
 Done
+- set minimum on pass characters  required title="3 characters minimum" pattern=".{3,}"
+- check if user already exists on sign up
 - organise php scripts into a separate folder
 - password enncryption
 

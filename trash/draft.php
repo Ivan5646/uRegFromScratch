@@ -1,4 +1,4 @@
-C:\OpenServer\domains\uRegMine\php_login\register.php on line 24
+Warning: mysql_num_rows() expects parameter 1 to be resource, boolean given inC:\OpenServer\domains\uRegMine\php_login\register.php on line 24
 
 Warning: Cannot modify header information - headers already sent by (output started at C:\OpenServer\domains\uRegMine\php_login\register.php:24) in C:\OpenServer\domains\uRegMine\php_login\register.php on line 30
 

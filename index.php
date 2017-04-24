@@ -59,7 +59,7 @@
 <form class="registerForm" action="php_login/register.php" method="POST">
   <input type="text" name="uname" placeholder="user name" required>
   <input type="email" name="email" placeholder="email" required>
-  <input type="password" name="password" placeholder="password" required>
+  <input type="password" name="password" placeholder="password" required title="3 characters minimum" pattern=".{3,}">
   <button>Sign up</button>
 </form>
 
