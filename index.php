@@ -1,5 +1,5 @@
 <?php
-  session_start(); // acessseing the variable which are put inside $_SESSION['id']
+  session_start(); // accessing the variable which are put inside $_SESSION['id']
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,9 @@
     <ul class="nav navbar-nav navbar-right">
     <?php if( !isset($_SESSION['id']) ){ ?>
       <li class="signUp"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-    <?php } ?>
+    <?php }else{  ?>
+      <li class="white"><?php echo $_SESSION['name']; ?></li>
+    <?php  } ?>
       <?php
         if( !isset($_SESSION['id']) ){
          echo "<li class='loginLi'><a href='#'><span class='glyphicon glyphicon-log-in'></span>Login</a></li>";
@@ -41,7 +43,7 @@
 </nav>
 
 <?php
-  if(isset($_SESSION['id'])){ // if logged in, show user id
+  if(isset($_SESSION['id'])){ // if logged in, show user id. Remove it.
     echo $_SESSION['id'];
   }else{
     echo "You are not logged in";
