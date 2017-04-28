@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 Scope
 Compulsory
-- display username if signed in
 - prevent injection
-- flashy css style
+- flashy css style http://codepen.io/ehermanson/pen/KwKWEv
+make tabs, leave the login signup buttons so they can call forms too
 Minor
 - password should be decrypted?
 - double password check ?
@@ -39,6 +39,7 @@ Minor
 - create header for all the pages, no need for now
 
 Done
+- display username if signed in
 - set minimum on pass characters  required title="3 characters minimum" pattern=".{3,}"
 - check if user already exists on sign up
 - organise php scripts into a separate folder

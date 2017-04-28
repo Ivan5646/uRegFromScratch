@@ -27,7 +27,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
     <?php if( !isset($_SESSION['id']) ){ ?>
-      <li class="signUp"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li class="signUp"><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
     <?php }else{  ?>
       <li class="white"><?php echo $_SESSION['name']; ?></li>
     <?php  } ?>
@@ -50,20 +50,24 @@
   }
 ?>
 
-<form class="loginForm" action="php_login/login.php" method="POST">
-  <input type="email" name="email" placeholder="email" required>
-  <input type="password" name="password" placeholder="password" required>
-  <button>Login</button>
-</form>
-
-<br><br>
-
-<form class="registerForm" action="php_login/register.php" method="POST">
-  <input type="text" name="uname" placeholder="user name" required>
-  <input type="email" name="email" placeholder="email" required>
-  <input type="password" name="password" placeholder="password" required title="3 characters minimum" pattern=".{3,}">
-  <button>Sign up</button>
-</form>
+<div class="forms">
+  <div class="formsInner">
+    <div class="tabsGroup">
+      <p id="tabBtn1" class="btnTabs">Sign up</p><p id="tabBtn2" class="btnTabs">Sign in</p>
+    </div>
+    <form class="loginForm" action="php_login/login.php" method="POST">
+      <input type="email" name="email" placeholder="email" required>
+      <input type="password" name="password" placeholder="password" required>
+      <button>Login</button>
+    </form>
+    <form class="registerForm" action="php_login/register.php" method="POST">
+      <input type="text" name="uname" placeholder="user name" required>
+      <input type="email" name="email" placeholder="email" required>
+      <input type="password" name="password" placeholder="password" required title="3 characters minimum" pattern=".{3,}">
+      <button>Sign up</button>
+    </form>
+  </div>
+</div>
 
 <script type="text/javascript" src="scripts/main.js"></script>
 </body>

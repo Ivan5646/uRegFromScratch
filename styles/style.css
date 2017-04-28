@@ -1,8 +1,43 @@
+/*.loginForm{
+  display:none;
+}
+.registerForm{
+  background-color: #13232f;
+  width: 60%;
+}
+.registerForm :nth-child(3){
+  display: block;
+}
+*/
+
 .loginForm, .registerForm{
   display:none;
+}
+.forms{
+  background-color: #13232f;
+  width: 60%;
+  color:white;
+}
+.forms .formsInner p{
+  display: inline-block;
+  margin-right: 16px;
+}
+.formsInner{
+  margin: 0 auto;
+  width: 400px;
 }
 .white{
   color:white;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.tabsGroup{
+  background-color: #333;
+}
+.btnTabs{
+  padding: 10px;
+  cursor: pointer;
+}
+.activeTabBtn{
+  background-color: #1ab188;
 }
