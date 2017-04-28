@@ -30,8 +30,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 Scope
 Compulsory
 - prevent injection
+- forgot password function, send an email to reset it
 - flashy css style http://codepen.io/ehermanson/pen/KwKWEv
-make tabs, leave the login signup buttons so they can call forms too
+  make tabs, leave the login signup buttons so they can call forms too
 Minor
 - password should be decrypted?
 - double password check ?

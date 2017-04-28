@@ -18,13 +18,13 @@ $(document).ready(function() {
   tabBtn1.addClass("activeTabBtn");
 
   tabBtn1.on("click", function(){
-    $(".registerForm").css({"display": "block"});
+    $(".registerForm").fadeIn(600);
     $(".loginForm").css({"display": "none"});
     tabBtn1.addClass("activeTabBtn");
     tabBtn2.removeClass("activeTabBtn");
   });
   tabBtn2.on("click", function(){
-    $(".loginForm").css({"display": "block"});
+    $(".loginForm").fadeIn(600);
     $(".registerForm").css({"display": "none"});
     tabBtn2.addClass("activeTabBtn");
     tabBtn1.removeClass("activeTabBtn");
