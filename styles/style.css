@@ -82,3 +82,8 @@ body{
   /*margin-top: 30px; has noo effect*/
   padding-top: 30px;
 }
+.white{
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
