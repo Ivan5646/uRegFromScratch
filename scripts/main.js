@@ -1,16 +1,4 @@
 $(document).ready(function() {
-  // php logout
-
-
-  $(".loginLi").on("click", function(){
-    $(".forms").css({"display": "block"});
-  });
-
-  $(".signUp").on("click", function(){
-    $(".forms").css({"display": "block"});
-    
-  });
-
 
   // tabs
   var tabBtn1 = $("#tabBtn1");
@@ -30,6 +18,23 @@ $(document).ready(function() {
     tabBtn2.addClass("activeTabBtn");
     tabBtn1.removeClass("activeTabBtn");
   });
+
+  $(".signUp").on("click", function(){
+    $(".registerForm").fadeIn(600);
+    $(".loginForm").css({"display": "none"});
+    tabBtn1.addClass("activeTabBtn");
+    tabBtn2.removeClass("activeTabBtn");
+  });
+  $(".loginLi").on("click", function(){
+    $(".loginForm").fadeIn(600);
+    $(".registerForm").css({"display": "none"});
+    tabBtn2.addClass("activeTabBtn");
+    tabBtn1.removeClass("activeTabBtn");
+  });
+
+
+
+
 
   // close fomrs if clicked outside
   window.onclick = function close(event){
