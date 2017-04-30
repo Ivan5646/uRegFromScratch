@@ -33,12 +33,8 @@ $(document).ready(function() {
 
   // close fomrs if clicked outside
   window.onclick = function close(event){
-    if(event.target.matches(".signUp a")){
+    if( event.target.matches(".signUp a") || event.target.matches(".loginLi a") || event.target.matches(".forms") ){
       $(".forms").css({"display": "block"}); 
-    }else if(event.target.matches(".loginLi a")){
-      $(".forms").css({"display": "block"});
-    }else if(event.target.matches(".forms")){
-      $(".forms").css({"display": "block"});
     }else if(event.target.matches("body")){
       $(".forms").css({"display": "none"});
     }
