@@ -50,7 +50,7 @@
   }
 ?>
 
-<div class="forms">
+<div class="forms" id="fomrsDiv">
   <div class="tabsGroup">
     <p id="tabBtn1" class="btnTabs">Sign up</p><p id="tabBtn2" class="btnTabs">Sign in</p>
   </div>

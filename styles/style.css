@@ -27,11 +27,11 @@ body{
   outline: none;
 }
 .forms{
+  display: none;
   background-color: #13232f;
   width: 52%;
   color:white;
   padding: 36px;
-  /*height: 100%;*/
 }
 .forms p{
   float: left;

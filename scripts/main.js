@@ -3,11 +3,12 @@ $(document).ready(function() {
 
 
   $(".loginLi").on("click", function(){
-    $(".loginForm").css({"display": "block"})
+    $(".forms").css({"display": "block"});
   });
 
   $(".signUp").on("click", function(){
-    $(".registerForm").css({"display": "block"})
+    $(".forms").css({"display": "block"});
+    
   });
 
 
@@ -30,5 +31,17 @@ $(document).ready(function() {
     tabBtn1.removeClass("activeTabBtn");
   });
 
+  // close fomrs if clicked outside
+  window.onclick = function close(event){
+    if(event.target.matches(".signUp a")){
+      $(".forms").css({"display": "block"}); 
+    }else if(event.target.matches(".loginLi a")){
+      $(".forms").css({"display": "block"});
+    }else if(event.target.matches(".forms")){
+      $(".forms").css({"display": "block"});
+    }else if(event.target.matches("body")){
+      $(".forms").css({"display": "none"});
+    }
+  }
 
 });
